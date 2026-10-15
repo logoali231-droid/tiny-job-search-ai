@@ -11,16 +11,22 @@ sys.path.insert(0, os.path.dirname(_here))
 
 load_dotenv()  # picks up .env from CWD or project root
 
-from q_agent import JobSearchQLearner
-from job_apis import FreeJobAPIClient
+from scrapers.gupy import GupyScraper
+
 from config import (
-    ROLE_FAMILIES, EXPERTISE_LEVELS, get_specialties, Q_TABLE_PATH,
-    SKILL_CATALOG, PERIOD_LABELS,
+    EXPERTISE_LEVELS,
+    PERIOD_LABELS,
+    Q_TABLE_PATH,
+    ROLE_FAMILIES,
+    SKILL_CATALOG,
+    get_specialties,
 )
-from sources import all_sources, toggle_source
-from scrapers.remotive import RemotiveScraper, JobicyScraper
+from job_apis import FreeJobAPIClient
+from q_agent import JobSearchQLearner
 from scrapers.ciee_pr import CieePrScraper
 from scrapers.puc_carreiras import PucCarreirasScraper
+from scrapers.remotive import JobicyScraper, RemotiveScraper
+from sources import all_sources, toggle_source
 from ui.add_source_dialog import AddSourceDialog
 
 BG, PANEL, PANEL_2, PANEL_3 = "#0f1419", "#1a1f2e", "#232938", "#2c3346"
@@ -35,6 +41,7 @@ SCRAPERS = {
     "jobicy": JobicyScraper(),
     "ciee_pr": CieePrScraper(),
     "puc_car": PucCarreirasScraper(),
+    "gupy": GupyScraper(),          # ← adicione esta linha
 }
 
 

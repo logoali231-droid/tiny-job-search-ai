@@ -2,9 +2,10 @@
 Registry of job sources. Each source is a class implementing BaseScraper.
 Users can add custom API sources from the UI (stored in data/sources.json).
 """
+
 import json
 import os
-from typing import List, Dict
+from typing import Dict, List  # noqa: UP035
 
 from config import DATA_DIR
 
@@ -12,18 +13,45 @@ SOURCES_PATH = os.path.join(DATA_DIR, "sources.json")
 
 
 def builtin_sources() -> List[dict]:
-    """Sources that ship with the app. All implement search(query, skills, min_period)."""
     return [
-        {"id": "remotive", "name": "Remotive", "kind": "api", "enabled": True,
-         "class": "scrapers.remotive.RemotiveScraper"},
-        {"id": "jobicy",   "name": "Jobicy",   "kind": "api", "enabled": True,
-         "class": "scrapers.remotive.JobicyScraper"},
-        {"id": "ciee_pr",  "name": "CIEE-PR",  "kind": "scrape", "enabled": False,
-         "class": "scrapers.ciee_pr.CieePrScraper",
-         "note": "Requires CIEE_PR_CPF and CIEE_PR_SENHA in .env"},
-        {"id": "puc_car",  "name": "PUC Carreiras", "kind": "scrape", "enabled": False,
-         "class": "scrapers.puc_carreiras.PucCarreirasScraper",
-         "note": "Requires PUC_CPF and PUC_SENHA in .env"},
+        {
+            "id": "remotive",
+            "name": "Remotive",
+            "kind": "api",
+            "enabled": True,
+            "class": "scrapers.remotive.RemotiveScraper",
+        },
+        {
+            "id": "jobicy",
+            "name": "Jobicy",
+            "kind": "api",
+            "enabled": True,
+            "class": "scrapers.remotive.JobicyScraper",
+        },
+        {
+            "id": "gupy",
+            "name": "Gupy",
+            "kind": "api",
+            "enabled": True,
+            "class": "scrapers.gupy.GupyScraper",
+            "note": "API pública, sem login. Estágios Brasil.",
+        },  # ← ADICIONE
+        {
+            "id": "ciee_pr",
+            "name": "CIEE-PR",
+            "kind": "scrape",
+            "enabled": False,
+            "class": "scrapers.ciee_pr.CieePrScraper",
+            "note": "Requer CIEE_PR_CPF e CIEE_PR_SENHA no .env",
+        },
+        {
+            "id": "puc_car",
+            "name": "PUC Carreiras",
+            "kind": "scrape",
+            "enabled": False,
+            "class": "scrapers.puc_carreiras.PucCarreirasScraper",
+            "note": "Requer PUC_CPF e PUC_SENHA no .env",
+        },
     ]
 
 
@@ -60,7 +88,9 @@ def all_sources() -> List[dict]:
 def toggle_source(source_id: str, enabled: bool) -> None:
     """Persist the enabled flag for a builtin source."""
     user = load_user_sources()
-    overrides = [s for s in user if s.get("kind") == "_override" and s["id"] == source_id]
+    overrides = [
+        s for s in user if s.get("kind") == "_override" and s["id"] == source_id
+    ]
     if overrides:
         overrides[0]["enabled"] = enabled
     else:
@@ -68,9 +98,14 @@ def toggle_source(source_id: str, enabled: bool) -> None:
     save_user_sources(user)
 
 
-def add_api_source(name: str, url_template: str, json_path_title: str,
-                   json_path_company: str, json_path_url: str,
-                   json_path_location: str = "") -> dict:
+def add_api_source(
+    name: str,
+    url_template: str,
+    json_path_title: str,
+    json_path_company: str,
+    json_path_url: str,
+    json_path_location: str = "",
+) -> dict:
     """
     Add a JSON-API source. url_template uses {query} placeholder.
     JSON paths are dot-separated, e.g. 'jobs.0.title' or 'results.title'.

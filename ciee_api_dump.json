@@ -1,0 +1,156 @@
+[
+  {
+    "url": "https://autoweb.cieepr.org.br/cdn-cgi/speculation",
+    "method": "GET",
+    "status": 200,
+    "length": 151,
+    "body_preview": "{\"tag\":\"cf-speed-brain\",\"prefetch\":[{\"eagerness\":\"conservative\",\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\",\"relative_to\":\"document\"}]}}]}"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Portal.API/api/Home/ListarNotificacoes",
+    "method": "POST",
+    "status": 200,
+    "length": 368,
+    "body_preview": "[{\"titulo\":\"DISPONÍVEL [ESTÁGIO]\",\"mensagem\":\"ENCAMINHADO PELA INTERNET\",\"url\":null,\"ativo\":false,\"tipo\":null},{\"titulo\":\"DISPONIVEL [APRENDIZ]\",\"mensagem\":\"DISPONÍVEL PARA O PROGRAMA APRENDIZ.\",\"url\":null,\"ativo\":false,\"tipo\":null},{\"titulo\":\"DISPONÍVEL [CURSOS LIVRES]\",\"mensagem\":\"DISPONÍVEL PARA REALIZAÇÃO DE CURSOS LIVRES.\",\"url\":null,\"ativo\":false,\"tipo\":null}]"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Portal.API/api/Home/ListarNotificacoes",
+    "method": "POST",
+    "status": 200,
+    "length": 368,
+    "body_preview": "[{\"titulo\":\"DISPONÍVEL [ESTÁGIO]\",\"mensagem\":\"ENCAMINHADO PELA INTERNET\",\"url\":null,\"ativo\":false,\"tipo\":null},{\"titulo\":\"DISPONIVEL [APRENDIZ]\",\"mensagem\":\"DISPONÍVEL PARA O PROGRAMA APRENDIZ.\",\"url\":null,\"ativo\":false,\"tipo\":null},{\"titulo\":\"DISPONÍVEL [CURSOS LIVRES]\",\"mensagem\":\"DISPONÍVEL PARA REALIZAÇÃO DE CURSOS LIVRES.\",\"url\":null,\"ativo\":false,\"tipo\":null}]"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Portal.API/api/Home/ListarPendenciasCamposPortal",
+    "method": "POST",
+    "status": 200,
+    "length": 183,
+    "body_preview": "{\"dadosPessoais\":true,\"dadosSociais\":true,\"dadosAcademicos\":true,\"habilidades\":false,\"meuCurriculo\":false,\"contaBancaria\":true,\"testeComportamental\":false,\"dinamicaInformativa\":false}"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Portal.API/api/Home/ListarNotificacoes",
+    "method": "POST",
+    "status": 200,
+    "length": 368,
+    "body_preview": "[{\"titulo\":\"DISPONÍVEL [ESTÁGIO]\",\"mensagem\":\"ENCAMINHADO PELA INTERNET\",\"url\":null,\"ativo\":false,\"tipo\":null},{\"titulo\":\"DISPONIVEL [APRENDIZ]\",\"mensagem\":\"DISPONÍVEL PARA O PROGRAMA APRENDIZ.\",\"url\":null,\"ativo\":false,\"tipo\":null},{\"titulo\":\"DISPONÍVEL [CURSOS LIVRES]\",\"mensagem\":\"DISPONÍVEL PARA REALIZAÇÃO DE CURSOS LIVRES.\",\"url\":null,\"ativo\":false,\"tipo\":null}]"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Portal.API/api/Home/ListarPendenciasCamposPortal",
+    "method": "POST",
+    "status": 200,
+    "length": 183,
+    "body_preview": "{\"dadosPessoais\":true,\"dadosSociais\":true,\"dadosAcademicos\":true,\"habilidades\":false,\"meuCurriculo\":false,\"contaBancaria\":true,\"testeComportamental\":false,\"dinamicaInformativa\":false}"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Portal.API/api/Home/ListarPendenciasCamposPortal",
+    "method": "POST",
+    "status": 200,
+    "length": 183,
+    "body_preview": "{\"dadosPessoais\":true,\"dadosSociais\":true,\"dadosAcademicos\":true,\"habilidades\":false,\"meuCurriculo\":false,\"contaBancaria\":true,\"testeComportamental\":false,\"dinamicaInformativa\":false}"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Cadastro.API/api/DadosPessoais/Listar",
+    "method": "POST",
+    "status": 200,
+    "length": 4196,
+    "body_preview": "{\"nmEstudante\":\"MATEO BARISCH SOMAVILLA\",\"idEstCivil\":null,\"cdCursoAnt\":null,\"idHabilitacao\":null,\"idLocomocao\":null,\"idFumante\":null,\"idDeficiente\":\"F\",\"dsDeficiente\":null,\"idTurnoDisp1\":\"T\",\"idTurnoDisp2\":\"N\",\"idSabado\":\"S\",\"dsEmail\":\"mateo.tratado@gmail.com\",\"nmPaiEstudante\":null,\"nmMaeEstudante\":null,\"idAerograma\":null,\"dtExportacao\":null,\"dtImportacao\":null,\"idEstrangeiro\":\"N\",\"dsNacionalidade\":null,\"nrPassaporte\":null,\"nrRne\":null,\"dtEmissVisto\":null,\"dtValVisto\":null,\"sgUfHsbc\":\"PR\",\"idFies\":null,\"idOutroEstado\":\"0\",\"dsLocomocaoCiee\":null,\"nrCtps\":null,\"nrSerieCtps\":null,\"sgUfCtps\":null,\"dsResposta\":null,\"uniOpe\":{\"dsUniOpe\":\"UNIDADE OPERACIONAL DE CURITIBA\",\"endereco\":null,\"cdNucleo\":null,\"cdResponsavel\":null,\"telefoneTele\":null,\"dsEmailUniope\":null,\"dsEmailUniOpeApr\":null,\"dsEmailTele\":null,\"dsEmailTesouraria\":null,\"telefonesUniOpe\":null,\"telefonesTesouraria\":null,\"dsCCustoDeb\":null,\"dsCCustoCred\":null,\"idAtivo\":null,\"dsCCustoProcessoSeletivo\":null,\"dsCCustoProgramaAprendiz\":null,\"nrFuncionario\":null,\"cdDivisao\":null,\"cdUniopePai\":null,\"telefonesAprendiz\":null,\"dsEmailAprendiz\":null,\"sgUfCIEE\":null,\"cdUsuFaleConosco\":null,\"vlFundoFixo\":null,\"nrCelular\":null,\"dsAtalho\":null,\"cnpj\":null,\"codigo\":\"101\",\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"ie\":null,\"status\":{\"tpStatus\":null,\"dsStatus\":\"ENCAMINHADO AUTO - ATENDIMENTO\",\"idSeleciona\":null,\"idManutencao\":null,\"cdStatusPe\":1,\"cdStatusTce\":null,\"cdStatusPeTce\":null,\"cdStatusUce\":null,\"cdStatus_ORACLE\":null,\"dsStatusAuto\":\"DISPONÍVEL\",\"dsMensagemAuto\":null,\"cdStatusAprendiz\":265,\"codigo\":104,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"cdPostoAtend\":7,\"dtMigracao\":null,\"cdUniOpeMigra\":null,\"idOutrasHabilidades\":\"N\",\"idOutrasLinguas\":\"N\",\"cdTipoResponsavel\":null,\"nmResponsavel\":null,\"vlRendaFamiliar\":null,\"statusAprendiz\":{\"tpStatus\":null,\"dsStatus\":\"ENCAMINHADO AUTO - ATENDIMENTO\",\"idSeleciona\":null,\"idManutencao\":null,\"cdStatusPe\":1,\"cdStatusTce\":null,\"cdStatusPeTce\":null,\"cdStatusUce\":null,\"cdStatus_ORACLE\":null,\"dsStatusAuto\":\"DISPONÍVEL\",\"dsMensagemAuto\":null,\"cdStatusAprendiz\":265,\"codigo\":265,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"statusTreinamento\":{\"tpStatus\":null,\"dsStatus\":\"ENCAMINHADO AUTO - ATENDIMENTO\",\"idSeleciona\":null,\"idManutencao\":null,\"cdStatusPe\":1,\"cdStatusTce\":null,\"cdStatusPeTce\":null,\"cdStatusUce\":null,\"cdStatus_ORACLE\":null,\"dsStatusAuto\":\"DISPONÍVEL\",\"dsMensagemAuto\":null,\"cdStatusAprendiz\":265,\"codigo\":256,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"dsTituloEleitor\":null,\"nrRgResponsavel\":null,\"sgUfRgResponsavel\":null,\"nrCpfResponsavel\":null,\"dsEmailResponsavel\":null,\"nrTelResponsavel\":null,\"dtMaxBloqueio\":null,\"dtEnvioICN\":null,\"dtEnvioIcnRs\":null,\"cdEstudanteOE\":\"9932836213\",\"idAptoAtividades\":\"S\",\"dsInformacoesComplementares\":null,\"dsEtnia\":\"NÃO INFORMADO\",\"dtBoletimEscolar\":null,\"codigoGrauDeficiencia\":5,\"secao\":null,\"zona\":null,\"nis\":null,\"nrReservista\":null,\"dsStatusAuto\":\"DISPONÍVEL\""
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Cadastro.API/api/DadosEscolares/ListarEstudanteCurso",
+    "method": "POST",
+    "status": 200,
+    "length": 4650,
+    "body_preview": "[{\"idTurnoAula\":\"M\",\"hrInicial\":600,\"hrFinal\":1230,\"nrSemAtual\":2,\"nrAnoAtual\":1,\"nrMatricula\":null,\"dtDeclMatricula\":null,\"dtInclusao\":\"2026-10-13T16:22:32\",\"idEstagioObrigatorio\":\"N\",\"idFormado\":\"N\",\"estudante\":{\"nmEstudante\":null,\"idEstCivil\":null,\"cdCursoAnt\":null,\"idHabilitacao\":null,\"idLocomocao\":null,\"idFumante\":null,\"idDeficiente\":null,\"dsDeficiente\":null,\"idTurnoDisp1\":null,\"idTurnoDisp2\":null,\"idSabado\":null,\"dsEmail\":null,\"nmPaiEstudante\":null,\"nmMaeEstudante\":null,\"idAerograma\":null,\"dtExportacao\":null,\"dtImportacao\":null,\"idEstrangeiro\":null,\"dsNacionalidade\":null,\"nrPassaporte\":null,\"nrRne\":null,\"dtEmissVisto\":null,\"dtValVisto\":null,\"sgUfHsbc\":null,\"idFies\":null,\"idOutroEstado\":null,\"dsLocomocaoCiee\":null,\"nrCtps\":null,\"nrSerieCtps\":null,\"sgUfCtps\":null,\"dsResposta\":null,\"uniOpe\":null,\"ie\":null,\"status\":null,\"cdPostoAtend\":null,\"dtMigracao\":null,\"cdUniOpeMigra\":null,\"idOutrasHabilidades\":null,\"idOutrasLinguas\":null,\"cdTipoResponsavel\":null,\"nmResponsavel\":null,\"vlRendaFamiliar\":null,\"statusAprendiz\":null,\"statusTreinamento\":null,\"dsTituloEleitor\":null,\"nrRgResponsavel\":null,\"sgUfRgResponsavel\":null,\"nrCpfResponsavel\":null,\"dsEmailResponsavel\":null,\"nrTelResponsavel\":null,\"dtMaxBloqueio\":null,\"dtEnvioICN\":null,\"dtEnvioIcnRs\":null,\"cdEstudanteOE\":null,\"idAptoAtividades\":null,\"dsInformacoesComplementares\":null,\"dsEtnia\":null,\"dtBoletimEscolar\":null,\"codigoGrauDeficiencia\":null,\"secao\":null,\"zona\":null,\"nis\":null,\"nrReservista\":null,\"dsStatusAuto\":null,\"dsDocReprovada\":null,\"estudanteNivel\":null,\"nome\":null,\"sexo\":0,\"dataNascimento\":null,\"documento\":null,\"rg\":null,\"telefones\":null,\"email\":null,\"endereco\":null,\"tipo\":0,\"cargo\":null,\"nrConselho\":null,\"formacao\":null,\"setor\":null,\"fax\":null,\"ramal\":null,\"nrTelCelContato\":null,\"codigo\":9932836213,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"campus\":{\"nmCampus\":\"CURITIBA GRADUAÇÃO (PRESENCIAL E EAD)\",\"endereco\":null,\"nrTelCampus\":null,\"nrFaxCampus\":null,\"dsEmailCampus\":null,\"nmResponsavel\":null,\"nrRamalResp\":null,\"ie\":{\"codigoUnidadeAdministrativa\":0,\"idPreConvenio\":null,\"idSexoAdmConv\":null,\"cnpj\":null,\"mantenedora\":null,\"codigoMatriz\":0,\"idQuemAssina\":null,\"email\":null,\"site\":null,\"nmFantasia\":null,\"nmRazaoSocial\":\"ASSOCIAÇÃO PARANAENSE DE CULTURA - APC - (PUC/PR)\",\"dsEmailAdicional\":null,\"dsNrProtocolo\":null,\"registroModificacao\":null,\"codigoConvenioNacional\":null,\"dataRenovacaoConvenio\":\"0001-01-01T00:00:00\",\"codigoUsuarioRenovacao\":0,\"representanteLegalCargo\":null,\"representanteLegalCodigoTratamento\":0,\"administradorConvenioCargo\":null,\"administradorConvenioCodigoTratamento\":null,\"dataFundacao\":\"0001-01-01T00:00:00\",\"unidadeOperacional\":null,\"codigoNivel\":1,\"codigoCategoria\":0,\"dsCategoria\":null,\"status\":null,\"codigoUsuarioProspector\":0,\"numeroDiasPrazoDocumento\":0,\"numeroViasTA\":0,\"codigoIeOE\":0,\"dataEnvioIcnRs\":\"0001-01-01T00:00:00\",\"bairro\":null,\"dataConvenio\":\"0001-01-01T00:00:00\",\"retConvenio\":\"0001-01-01T00:00:00\",\"dataTermino\":\"0001-01-01T00:00:00\",\"empresa\":null"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.VagasEstagio.API/api/OportunidadeEstagio/ListarDadosPessoaisEstudante",
+    "method": "POST",
+    "status": 200,
+    "length": 4172,
+    "body_preview": "{\"nmEstudante\":\"MATEO BARISCH SOMAVILLA\",\"idEstCivil\":null,\"cdCursoAnt\":null,\"idHabilitacao\":null,\"idLocomocao\":null,\"idFumante\":null,\"idDeficiente\":\"F\",\"dsDeficiente\":null,\"idTurnoDisp1\":\"T\",\"idTurnoDisp2\":\"N\",\"idSabado\":\"S\",\"dsEmail\":\"mateo.tratado@gmail.com\",\"nmPaiEstudante\":null,\"nmMaeEstudante\":null,\"idAerograma\":null,\"dtExportacao\":null,\"dtImportacao\":null,\"idEstrangeiro\":\"N\",\"dsNacionalidade\":null,\"nrPassaporte\":null,\"nrRne\":null,\"dtEmissVisto\":null,\"dtValVisto\":null,\"sgUfHsbc\":\"PR\",\"idFies\":null,\"idOutroEstado\":\"0\",\"dsLocomocaoCiee\":null,\"nrCtps\":null,\"nrSerieCtps\":null,\"sgUfCtps\":null,\"dsResposta\":null,\"uniOpe\":{\"dsUniOpe\":\"UNIDADE OPERACIONAL DE CURITIBA\",\"endereco\":null,\"cdNucleo\":null,\"cdResponsavel\":null,\"telefoneTele\":null,\"dsEmailUniope\":null,\"dsEmailTele\":null,\"dsEmailTesouraria\":null,\"telefonesUniOpe\":null,\"telefonesTesouraria\":null,\"dsCCustoDeb\":null,\"dsCCustoCred\":null,\"idAtivo\":null,\"dsCCustoProcessoSeletivo\":null,\"dsCCustoProgramaAprendiz\":null,\"nrFuncionario\":null,\"cdDivisao\":null,\"cdUniopePai\":null,\"telefonesAprendiz\":null,\"dsEmailAprendiz\":null,\"sgUfCIEE\":null,\"cdUsuFaleConosco\":null,\"vlFundoFixo\":null,\"nrCelular\":null,\"dsAtalho\":null,\"cnpj\":null,\"codigo\":\"101\",\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"ie\":null,\"status\":{\"tpStatus\":null,\"dsStatus\":\"ENCAMINHADO AUTO - ATENDIMENTO\",\"idSeleciona\":null,\"idManutencao\":null,\"cdStatusPe\":1,\"cdStatusTce\":null,\"cdStatusPeTce\":null,\"cdStatusUce\":null,\"cdStatus_ORACLE\":null,\"dsStatusAuto\":\"DISPONÍVEL\",\"dsMensagemAuto\":null,\"cdStatusAprendiz\":265,\"codigo\":104,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"cdPostoAtend\":7,\"dtMigracao\":null,\"cdUniOpeMigra\":null,\"idOutrasHabilidades\":\"N\",\"idOutrasLinguas\":\"N\",\"cdTipoResponsavel\":null,\"nmResponsavel\":null,\"vlRendaFamiliar\":null,\"statusAprendiz\":{\"tpStatus\":null,\"dsStatus\":\"ENCAMINHADO AUTO - ATENDIMENTO\",\"idSeleciona\":null,\"idManutencao\":null,\"cdStatusPe\":1,\"cdStatusTce\":null,\"cdStatusPeTce\":null,\"cdStatusUce\":null,\"cdStatus_ORACLE\":null,\"dsStatusAuto\":\"DISPONÍVEL\",\"dsMensagemAuto\":null,\"cdStatusAprendiz\":265,\"codigo\":265,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"statusTreinamento\":{\"tpStatus\":null,\"dsStatus\":\"ENCAMINHADO AUTO - ATENDIMENTO\",\"idSeleciona\":null,\"idManutencao\":null,\"cdStatusPe\":1,\"cdStatusTce\":null,\"cdStatusPeTce\":null,\"cdStatusUce\":null,\"cdStatus_ORACLE\":null,\"dsStatusAuto\":\"DISPONÍVEL\",\"dsMensagemAuto\":null,\"cdStatusAprendiz\":265,\"codigo\":256,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"dsTituloEleitor\":null,\"nrRgResponsavel\":null,\"sgUfRgResponsavel\":null,\"nrCpfResponsavel\":null,\"dsEmailResponsavel\":null,\"nrTelResponsavel\":null,\"dtMaxBloqueio\":null,\"dtEnvioICN\":null,\"dtEnvioIcnRs\":null,\"cdEstudanteOE\":\"9932836213\",\"idAptoAtividades\":\"S\",\"dsInformacoesComplementares\":null,\"dsEtnia\":\"NÃO INFORMADO\",\"dtBoletimEscolar\":null,\"codigoGrauDeficiencia\":5,\"secao\":null,\"zona\":null,\"nis\":null,\"nrReservista\":null,\"dsStatusAuto\":\"DISPONÍVEL\",\"dsDocReprovada\":null,\""
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.VagasEstagio.API/api/OportunidadeEstagio/ListarCidadesPorUfIBGE",
+    "method": "POST",
+    "status": 200,
+    "length": 860721,
+    "body_preview": "[{\"dsCidade\":\"ABAPA (CASTRO)\",\"sgUf\":\"PR\",\"cdDdd\":\"42\",\"uniope\":{\"dsUniOpe\":\"UNIDADE OPERACIONAL DE PONTA GROSSA\",\"endereco\":null,\"cdNucleo\":null,\"cdResponsavel\":null,\"telefoneTele\":null,\"dsEmailUniope\":null,\"dsEmailTele\":null,\"dsEmailTesouraria\":null,\"telefonesUniOpe\":null,\"telefonesTesouraria\":null,\"dsCCustoDeb\":null,\"dsCCustoCred\":null,\"idAtivo\":null,\"dsCCustoProcessoSeletivo\":null,\"dsCCustoProgramaAprendiz\":null,\"nrFuncionario\":null,\"cdDivisao\":null,\"cdUniopePai\":null,\"telefonesAprendiz\":null,\"dsEmailAprendiz\":null,\"sgUfCIEE\":null,\"cdUsuFaleConosco\":null,\"vlFundoFixo\":null,\"nrCelular\":null,\"dsAtalho\":null,\"cnpj\":null,\"codigo\":\"102\",\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"cdCidadeIBGE\":null,\"cdCidadePai\":null,\"codigo\":53520,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},{\"dsCidade\":\"ABATIA\",\"sgUf\":\"PR\",\"cdDdd\":\"43\",\"uniope\":{\"dsUniOpe\":\"UNIDADE OPERACIONAL DE CORNÉLIO PROCÓPIO\",\"endereco\":null,\"cdNucleo\":null,\"cdResponsavel\":null,\"telefoneTele\":null,\"dsEmailUniope\":null,\"dsEmailTele\":null,\"dsEmailTesouraria\":null,\"telefonesUniOpe\":null,\"telefonesTesouraria\":null,\"dsCCustoDeb\":null,\"dsCCustoCred\":null,\"idAtivo\":null,\"dsCCustoProcessoSeletivo\":null,\"dsCCustoProgramaAprendiz\":null,\"nrFuncionario\":null,\"cdDivisao\":null,\"cdUniopePai\":null,\"telefonesAprendiz\":null,\"dsEmailAprendiz\":null,\"sgUfCIEE\":null,\"cdUsuFaleConosco\":null,\"vlFundoFixo\":null,\"nrCelular\":null,\"dsAtalho\":null,\"cnpj\":null,\"codigo\":\"502\",\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"cdCidadeIBGE\":null,\"cdCidadePai\":null,\"codigo\":53538,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},{\"dsCidade\":\"ACAMPAMENTO DAS MINAS\",\"sgUf\":\"PR\",\"cdDdd\":null,\"uniope\":{\"dsUniOpe\":\"NAO INFORMADO\",\"endereco\":null,\"cdNucleo\":null,\"cdResponsavel\":null,\"telefoneTele\":null,\"dsEmailUniope\":null,\"dsEmailTele\":null,\"dsEmailTesouraria\":null,\"telefonesUniOpe\":null,\"telefonesTesouraria\":null,\"dsCCustoDeb\":null,\"dsCCustoCred\":null,\"idAtivo\":null,\"dsCCustoProcessoSeletivo\":null,\"dsCCustoProgramaAprendiz\":null,\"nrFuncionario\":null,\"cdDivisao\":null,\"cdUniopePai\":null,\"telefonesAprendiz\":null,\"dsEmailAprendiz\":null,\"sgUfCIEE\":null,\"cdUsuFaleConosco\":null,\"vlFundoFixo\":null,\"nrCelular\":null,\"dsAtalho\":null,\"cnpj\":null,\"codigo\":\"999\",\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"cdCidadeIBGE\":null,\"cdCidadePai\":null,\"codigo\":101702,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},{\"dsCidade\":\"ACUNGUI\",\"sgUf\":\"PR\",\"cdDdd\":null,\"uniope\":{\"dsUniOpe\":\"NAO INFORMADO\",\"endereco\":null,\"cdNucleo\":null,\"cdResponsavel\":null,\"telefoneTele\":null,\"dsEmailUniope\":null,\"dsEmailTele\":null,\"dsEmailTesouraria\":null,\"telefonesUniOpe\":null,\"telefonesTesouraria\":null,\"dsCCustoDeb\":null,\"dsCCustoCred\":null,\"idAtivo\":null,\"dsCCustoProcessoSeletivo\":null,\"dsCCustoProgramaAprendiz\":null,\"nrFuncionario\":null,\"cdDivisao\":null,\"cdUniopePai\":null,\"telefonesAprendiz\":null,\"dsEmailAprendiz\":null,\"sgUfCIEE\":null,\"cdUsuFaleConosco\":null,\"vlFundoFixo\":null,\"nrCe"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.VagasEstagio.API/api/OportunidadeEstagio/ListarRelacionadasPorEstudante",
+    "method": "POST",
+    "status": 200,
+    "length": 6213,
+    "body_preview": "[{\"cdOpEstagio\":10001756958,\"cdOpEstagioSeq\":10001756958,\"cdOpEstagioRef\":null,\"cdArea\":0,\"dsArea\":null,\"idEstagioObrigatorio\":null,\"idGrau\":0,\"idSexo\":0,\"idEstadoCivil\":null,\"nrIdadeMin\":null,\"nrIdadeMax\":null,\"idLocomocao\":null,\"idHabilitacao\":null,\"idFumante\":null,\"cdCursoAnt\":null,\"cdCurso\":null,\"nrVagas\":0,\"nrMesesEstagio\":null,\"idCombinaHorario\":\"S\",\"hrIni1\":null,\"hrFim1\":null,\"hrIni2\":null,\"hrFim2\":null,\"hrIniSab1\":null,\"hrFimSab1\":null,\"hrIniSab2\":null,\"hrFimSab2\":null,\"idTurno1\":\"I\",\"idTurno2\":\"I\",\"idSabado\":null,\"idEfetivacao\":null,\"nrTelEntrevista\":\"55419754162\",\"enderecoEstagio\":null,\"dsSetorEstagio\":\"VPEN\\\\\\\\STD\\\\\\\\DIAD - GER EX DADOS IA SOL DIG\",\"dsSituacao\":null,\"enderecoEntrevista\":null,\"cdSupervisor\":0,\"nmPessoaEnt\":\"ELLEN FERNANDA MONTEIRO\",\"dsCargoPessoaEnt\":\"Enviar currículo por WhatsApp e e-mail para o agendamento da entrevista e aguardar o retorno da empresa.\",\"idMarcaEntrevista\":null,\"dsEmailEntrevista\":\"PROGRAMAESTAGIO@COPEL.COM\",\"vlBolsaAux\":11.1500,\"idTpPagto\":\"H\",\"nmSolicitante\":null,\"dsAtividades\":\"\",\"dsObsHorario\":\"A COMBINAR, EM DIAS E HORÁRIOS ALTERNATIVOS, NÃO ULTRAPASSANDO 06 HORAS DIÁRIAS E 30 HORAS SEMANAIS\",\"dsObsEncam\":null,\"dsObsGeral\":null,\"dsObsAuto\":\"PREZADOS, BOM DIA!\\n\\nRECEBEMOS A VAGA 10001756958 E VERIFICAMOS QUE O PEDRO HENRIQUE NUNES PACHECO ESTÁ INDICADO COMO O SUPERVISOR DO ESTÁGIO E POSSUI FORMAÇÃO EM DESIGN, PARA A EMISSÃO DO CONTRATO É NECESSÁRIO QUE O SUPERVISOR(A) TENHA FORMAÇÃO OU EXPERIÊNCIA PROFISSIONAL NA ÁREA, OU NO CURSO DO ESTUDANTE: \\n \\nDESTA FORMA, SOLICITAMOS POR GENTILEZA INDICAR UM NOVO SUPERVISOR DO QUADRO DE FUNCIONÁRIOS FORMADO EM COMPUTAÇÃO OU ÁREA CORRELATA, CASO O SUPERVISOR POSSUA EXPERIÊNCIA NESTA ÁREA, SERÁ NECESSÁRIO INCLUIR ESTA INFORMAÇÃO COMO ÁREA DE ATUAÇÃO EM NOSSO PORTAL PARA QUE POSSAMOS SEGUIR COM A\",\"idInternet\":\"N\",\"idAutoAtend\":\"S\",\"idDeficiente\":null,\"cdUsuResp\":0,\"nrMaxEncam\":0,\"dtImportacao\":null,\"cdUsuImportacao\":null,\"cdUsuProspector\":0,\"vlPercentualCi\":null,\"vlMinimoCi\":null,\"empresa\":{\"cdUniOpeAdm\":0,\"cdConvenioOutrosEst\":null,\"dataConvenio\":null,\"razaoSocial\":\"COPEL DISTRIBUIÇÃO S.A.\",\"nomeFantasia\":\"COPEL - DIS\",\"documento\":null,\"nrInscrEstadual\":null,\"dtFundacao\":null,\"dataTerminoConv\":null,\"valorPercentualCi\":null,\"valorMinimoCi\":null,\"valorCiDiferenciado\":null,\"valorCiSemRemuneracao\":null,\"ciAprendizGeral6Hrs\":null,\"ciAprendizParanagua6Hrs\":null,\"numeroDiaPagto\":0,\"idPagamentoDireto\":null,\"idFolhaFreqquencia\":null,\"idFolhaFrequenciaInternet\":null,\"idCnrMesCorrente\":null,\"idCnr\":null,\"idPagamentoDiferenciado\":null,\"dsSiteUce\":null,\"idConvenioNacional\":null,\"sgUfConvOrigem\":null,\"cdUsuProspector\":0,\"cdBancoBoleto\":null,\"cdRamoAtividade\":0,\"cdSeguradora\":0,\"status\":null,\"cdSetor\":0,\"cdSubSetor\":null,\"cdNivelSetor\":null,\"idBaCieeOrigem\":null,\"dataConvenioNacional\":null,\"valorCapitalSeguradoUce\":null,\"idPreencherFolhaUltimoMes\":null,\"idPreencherFolhaSetor\":null,\"idProjetoAprendiz\":null,\"idProcessoSeletivo\":null,\"valorDotacaoOrcamentaria\":null,\"dataDotI"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Cadastro.API/api/ContatoValidacao/VerificarFluxo",
+    "method": "POST",
+    "status": 200,
+    "length": 66,
+    "body_preview": "{\"cdStatus\":0,\"dsAcao\":\"OK\",\"dsMsg\":\"Dados válidos e atualizados\"}"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Cadastro.API/api/ContatoValidacao/VerificarFluxo",
+    "method": "POST",
+    "status": 200,
+    "length": 66,
+    "body_preview": "{\"cdStatus\":0,\"dsAcao\":\"OK\",\"dsMsg\":\"Dados válidos e atualizados\"}"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.VagasEstagio.API/api/OportunidadeEstagio/ListarCursoAtivo",
+    "method": "POST",
+    "status": 200,
+    "length": 4721,
+    "body_preview": "[{\"idTurnoAula\":\"M\",\"hrInicial\":600,\"hrFinal\":1230,\"nrSemAtual\":2,\"nrAnoAtual\":1,\"nrMatricula\":null,\"dtDeclMatricula\":null,\"dtInclusao\":null,\"idEstagioObrigatorio\":\"N\",\"idFormado\":\"N\",\"estudante\":{\"nmEstudante\":null,\"idEstCivil\":null,\"cdCursoAnt\":null,\"idHabilitacao\":null,\"idLocomocao\":null,\"idFumante\":null,\"idDeficiente\":null,\"dsDeficiente\":null,\"idTurnoDisp1\":null,\"idTurnoDisp2\":null,\"idSabado\":null,\"dsEmail\":null,\"nmPaiEstudante\":null,\"nmMaeEstudante\":null,\"idAerograma\":null,\"dtExportacao\":null,\"dtImportacao\":null,\"idEstrangeiro\":null,\"dsNacionalidade\":null,\"nrPassaporte\":null,\"nrRne\":null,\"dtEmissVisto\":null,\"dtValVisto\":null,\"sgUfHsbc\":null,\"idFies\":null,\"idOutroEstado\":null,\"dsLocomocaoCiee\":null,\"nrCtps\":null,\"nrSerieCtps\":null,\"sgUfCtps\":null,\"dsResposta\":null,\"uniOpe\":null,\"ie\":null,\"status\":null,\"cdPostoAtend\":null,\"dtMigracao\":null,\"cdUniOpeMigra\":null,\"idOutrasHabilidades\":null,\"idOutrasLinguas\":null,\"cdTipoResponsavel\":null,\"nmResponsavel\":null,\"vlRendaFamiliar\":null,\"statusAprendiz\":null,\"statusTreinamento\":null,\"dsTituloEleitor\":null,\"nrRgResponsavel\":null,\"sgUfRgResponsavel\":null,\"nrCpfResponsavel\":null,\"dsEmailResponsavel\":null,\"nrTelResponsavel\":null,\"dtMaxBloqueio\":null,\"dtEnvioICN\":null,\"dtEnvioIcnRs\":null,\"cdEstudanteOE\":null,\"idAptoAtividades\":null,\"dsInformacoesComplementares\":null,\"dsEtnia\":null,\"dtBoletimEscolar\":null,\"codigoGrauDeficiencia\":null,\"secao\":null,\"zona\":null,\"nis\":null,\"nrReservista\":null,\"dsStatusAuto\":null,\"dsDocReprovada\":null,\"estudanteNivel\":null,\"nome\":null,\"sexo\":0,\"dataNascimento\":null,\"documento\":null,\"rg\":null,\"telefones\":null,\"email\":null,\"endereco\":null,\"tipo\":0,\"cargo\":null,\"nrConselho\":null,\"formacao\":null,\"setor\":null,\"fax\":null,\"ramal\":null,\"nrTelCelContato\":null,\"codigo\":9932836213,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},\"campus\":{\"nmCampus\":\"CURITIBA GRADUAÇÃO (PRESENCIAL E EAD)\",\"endereco\":null,\"nrTelCampus\":null,\"nrFaxCampus\":null,\"dsEmailCampus\":null,\"nmResponsavel\":null,\"nrRamalResp\":null,\"ie\":{\"codigoUnidadeAdministrativa\":0,\"idPreConvenio\":null,\"idSexoAdmConv\":null,\"cnpj\":null,\"mantenedora\":null,\"codigoMatriz\":0,\"idQuemAssina\":null,\"email\":null,\"site\":null,\"nmFantasia\":null,\"nmRazaoSocial\":\"ASSOCIAÇÃO PARANAENSE DE CULTURA - APC - (PUC/PR)\",\"dsEmailAdicional\":null,\"dsNrProtocolo\":null,\"registroModificacao\":null,\"codigoConvenioNacional\":null,\"dataRenovacaoConvenio\":\"0001-01-01T00:00:00\",\"codigoUsuarioRenovacao\":0,\"representanteLegalCargo\":null,\"representanteLegalCodigoTratamento\":0,\"administradorConvenioCargo\":null,\"administradorConvenioCodigoTratamento\":null,\"dataFundacao\":\"0001-01-01T00:00:00\",\"unidadeOperacional\":{\"dsUniOpe\":null,\"endereco\":null,\"cdNucleo\":null,\"cdResponsavel\":null,\"telefoneTele\":null,\"dsEmailUniope\":null,\"dsEmailTele\":null,\"dsEmailTesouraria\":null,\"telefonesUniOpe\":null,\"telefonesTesouraria\":null,\"dsCCustoDeb\":null,\"dsCCustoCred\":null,\"idAtivo\":null,\"dsCCustoProcessoSeletivo\":null,\"dsCCustoProgramaAprendiz\":null,\"nrFuncionario\":null,\"cdDivisao\":"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Cadastro.API/api/Contato/ListarPropriedadeResposta",
+    "method": "POST",
+    "status": 200,
+    "length": 231,
+    "body_preview": "{\"dsEntidade\":\"OE\",\"cdEntidade\":10001756958,\"cdPropriedade\":254,\"valor\":\"1\",\"dtInclusao\":\"2026-10-09T12:40:42\",\"dsEntidadeCompl\":null,\"cdEntidadeCompl\":null,\"codigo\":null,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]}"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.VagasEstagio.API/api/OportunidadeEstagio/ListarOpEstagioVisualizada?ids=10001756958",
+    "method": "GET",
+    "status": 200,
+    "length": 49,
+    "body_preview": "[{\"cdOpEstagio\":10001756958,\"visualizada\":false}]"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.VagasEstagio.API/api/OportunidadeEstagio/ListarAtividadesOpEstagio",
+    "method": "POST",
+    "status": 200,
+    "length": 1979,
+    "body_preview": "[{\"cdAtividadesOpEstagio\":5875079,\"cdOpEstagio\":10001756958,\"cdOpEstagioSeq\":10001756958,\"cdAtividades\":null,\"dsAtividades\":\"DESENVOLVIMENTO DA PARTE VISUAL (FRONTEND): AJUDAR A DESENHAR E CONSTRUIR AS TELAS, BOTÕES E MENUS QUE OS USUÁRIOS VEEM NO COMPUTADOR OU NO CELULAR. O OBJETIVO PRINCIPAL É GARANTIR QUE O APLICATIVO SEJA BONITO, INTUITIVO E MUITO FÁCIL DAS PESSOAS USAREM, SEM COMPLICAÇÕES.\",\"codigo\":0,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},{\"cdAtividadesOpEstagio\":5875080,\"cdOpEstagio\":10001756958,\"cdOpEstagioSeq\":10001756958,\"cdAtividades\":null,\"dsAtividades\":\"CONSTRUÇÃO DO \\\"MOTOR\\\" DOS SISTEMAS (BACKEND): COLABORAR NA PARTE DO SISTEMA QUE TRABALHA NOS BASTIDORES (O QUE O USUÁRIO NÃO VÊ). ISSO ENVOLVE AJUDAR A ORGANIZAR ONDE AS INFORMAÇÕES E CADASTROS FICAM GUARDADOS COM SEGURANÇA E GARANTIR QUE O APLICATIVO FUNCIONE DE FORMA RÁPIDA, PROCESSANDO OS DADOS SEM TRAVAR.\",\"codigo\":0,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},{\"cdAtividadesOpEstagio\":5875081,\"cdOpEstagio\":10001756958,\"cdOpEstagioSeq\":10001756958,\"cdAtividades\":null,\"dsAtividades\":\"APLICAÇÕES COM INTELIGÊNCIA ARTIFICIAL (IA): PARTICIPAR DE PROJETOS QUE USAM A TECNOLOGIA PARA DEIXAR OS SISTEMAS \\\"MAIS ESPERTOS\\\". ISSO PODE INCLUIR AJUDAR A TESTAR OU CRIAR FERRAMENTAS QUE IDENTIFICAM PADRÕES, RESPONDEM PERGUNTAS DE FORMA AUTOMÁTICA OU REALIZAM TAREFAS REPETITIVAS SOZINHAS, POUPANDO O TEMPO DAS PESSOAS.\",\"codigo\":0,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]},{\"cdAtividadesOpEstagio\":5875082,\"cdOpEstagio\":10001756958,\"cdOpEstagioSeq\":10001756958,\"cdAtividades\":null,\"dsAtividades\":\"CONEXÃO ENTRE AS PARTES (INTEGRAÇÃO): APRENDER E AJUDAR A FAZER COM QUE A TELA DO APLICATIVO CONVERSE CORRETAMENTE COM O \\\"MOTOR\\\" DO SISTEMA. OU SEJA, GARANTIR QUE, QUANDO UM USUÁRIO APERTAR UM BOTÃO NA TELA, A INFORMAÇÃO CERTA SEJA ENVIADA, PROCESSADA E DEVOLVIDA RAPIDAMENTE.\",\"codigo\":0,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]}]"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.VagasEstagio.API/api/OportunidadeEstagio/ListarPorEstudanteCursoUniOpeStatusAvancada",
+    "method": "POST",
+    "status": 200,
+    "length": 2,
+    "body_preview": "[]"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Cadastro.API/api/Contato/ListarPropriedadeResposta",
+    "method": "POST",
+    "status": 200,
+    "length": 231,
+    "body_preview": "{\"dsEntidade\":\"OE\",\"cdEntidade\":10001756958,\"cdPropriedade\":255,\"valor\":\"0\",\"dtInclusao\":\"2026-10-13T08:44:04\",\"dsEntidadeCompl\":null,\"cdEntidadeCompl\":null,\"codigo\":null,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]}"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Cadastro.API/api/Contato/ListarPropriedadeResposta",
+    "method": "POST",
+    "status": 200,
+    "length": 231,
+    "body_preview": "{\"dsEntidade\":\"OE\",\"cdEntidade\":10001756958,\"cdPropriedade\":256,\"valor\":\"1\",\"dtInclusao\":\"2026-10-09T12:40:42\",\"dsEntidadeCompl\":null,\"cdEntidadeCompl\":null,\"codigo\":null,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]}"
+  },
+  {
+    "url": "https://autoweb.cieepr.org.br/Estudante.Cadastro.API/api/Contato/ListarPropriedadeResposta",
+    "method": "POST",
+    "status": 200,
+    "length": 230,
+    "body_preview": "{\"dsEntidade\":\"OE\",\"cdEntidade\":10001756958,\"cdPropriedade\":258,\"valor\":\"\",\"dtInclusao\":\"2026-10-13T08:44:04\",\"dsEntidadeCompl\":null,\"cdEntidadeCompl\":null,\"codigo\":null,\"ativo\":false,\"registroModificacao\":null,\"notifications\":[]}"
+  }
+]
