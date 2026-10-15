@@ -40,10 +40,18 @@ fi
 echo "📥  Installing Python dependencies…"
 "$VENV_DIR/bin/pip" install --upgrade pip --quiet
 "$VENV_DIR/bin/pip" install -r "$PROJECT_DIR/requirements.txt" --quiet
-# --- Install Playwright browsers ---
-echo "🌐  Installing Playwright Chromium (one-time, ~150MB)…"
-"$VENV_DIR/bin/python" -m playwright install chromium 2>/dev/null || \
-    echo "   ⚠️  Playwright browser install failed — scrapers will be disabled."
+# --- Optional Playwright browser installation ---
+if [ "${INSTALL_PLAYWRIGHT_BROWSER:-0}" = "1" ]; then
+    echo "🌐  Installing Playwright Chromium..."
+    "$VENV_DIR/bin/python" -m playwright install chromium || {
+        echo "⚠️  Chromium installation failed."
+        echo "   Browser-based scrapers may not work."
+    }
+else
+    echo "⏭️  Skipping Chromium installation."
+    echo "   To install it later, run:"
+    echo "   INSTALL_PLAYWRIGHT_BROWSER=1 ./install.sh"
+fi
 
 # --- Make scripts executable ---
 chmod +x "$PROJECT_DIR/run.sh" "$PROJECT_DIR/install.sh" "$PROJECT_DIR/uninstall.sh"
@@ -57,7 +65,7 @@ Type=Application
 Version=1.0
 Name=Tiny Job Search AI
 GenericName=Job Search Assistant
-Comment=Q-learning powered job search that learns your preferences
+Comment=Adaptive job search assistant that learns your preferences
 Exec=$PROJECT_DIR/run.sh
 Icon=$ICON_PATH
 Terminal=false
