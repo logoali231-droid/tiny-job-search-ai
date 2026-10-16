@@ -2,6 +2,9 @@ import os
 import sys
 import threading
 import webbrowser
+from urllib.parse import quote_plus
+
+import requests
 import tkinter as tk
 from tkinter import ttk, messagebox
 from dotenv import load_dotenv
@@ -373,6 +376,96 @@ class JobSearchApp:
     def _open_add_source(self):
         AddSourceDialog(self.root, on_added=self._refresh_sources)
 
+    @staticmethod
+    def _json_path_values(data, path):
+        """Read a dot-separated JSON path, expanding lists such as jobs.title."""
+        if not path:
+            return []
+
+        parts = path.split(".")
+
+        def walk(node, index):
+            if index >= len(parts):
+                return [node]
+
+            part = parts[index]
+            if isinstance(node, list):
+                if part.isdigit():
+                    item_index = int(part)
+                    if item_index < len(node):
+                        return walk(node[item_index], index + 1)
+                    return []
+
+                values = []
+                for item in node:
+                    values.extend(walk(item, index))
+                return values
+
+            if isinstance(node, dict) and part in node:
+                return walk(node[part], index + 1)
+
+            return []
+
+        return walk(data, 0)
+
+    def _search_custom_api(self, source, query):
+        """Search an open JSON API source created from the UI."""
+        template = source.get("url_template", "")
+        if "{query}" not in template:
+            raise ValueError("Custom API URL template must contain {query}.")
+
+        url = template.replace("{query}", quote_plus(query))
+        if not url.lower().startswith(("https://", "http://")):
+            raise ValueError("Custom API URL must start with http:// or https://.")
+
+        response = requests.get(
+            url,
+            timeout=15,
+            headers={"User-Agent": "TinyJobSearchAI/1.0"},
+        )
+        response.raise_for_status()
+        payload = response.json()
+
+        field_map = source.get("map") or {}
+        titles = self._json_path_values(payload, field_map.get("title", ""))
+        companies = self._json_path_values(payload, field_map.get("company", ""))
+        urls = self._json_path_values(payload, field_map.get("url", ""))
+        locations = self._json_path_values(payload, field_map.get("location", ""))
+
+        def value_at(values, index):
+            if not values:
+                return ""
+            if len(values) == 1:
+                value = values[0]
+            elif index < len(values):
+                value = values[index]
+            else:
+                return ""
+            if value is None or isinstance(value, (dict, list)):
+                return ""
+            return str(value).strip()
+
+        jobs = []
+        for index, raw_title in enumerate(titles):
+            if raw_title is None or isinstance(raw_title, (dict, list)):
+                continue
+            title = str(raw_title).strip()
+            if not title:
+                continue
+
+            jobs.append({
+                "title": title,
+                "company": value_at(companies, index),
+                "url": value_at(urls, index),
+                "location": value_at(locations, index) or "Not specified",
+                "salary": "",
+                "source": source.get("name", "Custom API"),
+                "tags": [],
+            })
+
+        print(f"[{source.get('name', 'Custom API')}] returned {len(jobs)} jobs")
+        return jobs
+
     # ── Search flow ────────────────────────────────────────────────────────
     def _on_role_change(self, _e=None):
         role = self.role_var.get()
@@ -427,11 +520,14 @@ class JobSearchApp:
             for s in enabled:
                 sid = s["id"]
                 scraper = SCRAPERS.get(sid)
-                if scraper is None:
-                    # user-defined API source handled elsewhere (future)
-                    continue
                 try:
-                    got = scraper.search(query, self.selected_skills, period)
+                    if scraper is not None:
+                        got = scraper.search(query, self.selected_skills, period)
+                    elif s.get("kind") == "api" and s.get("url_template"):
+                        got = self._search_custom_api(s, query)
+                    else:
+                        print(f"[{sid}] No search handler is configured.")
+                        continue
                     jobs.extend(got)
                 except Exception as e:
                     print(f"[{sid}] {e}")
