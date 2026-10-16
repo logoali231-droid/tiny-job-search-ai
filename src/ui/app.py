@@ -164,8 +164,36 @@ class JobSearchApp:
         pad = tk.Frame(canvas, bg=PANEL)
         canvas.create_window((0, 0), window=pad, anchor="nw", width=340)
         pad.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
-        canvas.bind_all("<Button-4>", lambda e: canvas.yview_scroll(-1, "units"))
-        canvas.bind_all("<Button-5>", lambda e: canvas.yview_scroll(1, "units"))
+        # Cross-platform wheel scrolling. Windows uses <MouseWheel>;
+        # Linux/X11 uses Button-4/Button-5. Only scroll this sidebar when
+        # the pointer is over one of its widgets.
+        def pointer_is_inside_sidebar(widget):
+            while widget is not None:
+                if widget == sidebar:
+                    return True
+                widget = getattr(widget, "master", None)
+            return False
+
+        def scroll_sidebar_windows(event):
+            target = self.root.winfo_containing(event.x_root, event.y_root)
+            if not pointer_is_inside_sidebar(target):
+                return
+            units = int(-event.delta / 120)
+            if units == 0:
+                units = -1 if event.delta > 0 else 1
+            canvas.yview_scroll(units, "units")
+            return "break"
+
+        def scroll_sidebar_linux(event):
+            target = self.root.winfo_containing(event.x_root, event.y_root)
+            if not pointer_is_inside_sidebar(target):
+                return
+            canvas.yview_scroll(-1 if event.num == 4 else 1, "units")
+            return "break"
+
+        canvas.bind_all("<MouseWheel>", scroll_sidebar_windows)
+        canvas.bind_all("<Button-4>", scroll_sidebar_linux)
+        canvas.bind_all("<Button-5>", scroll_sidebar_linux)
 
         tk.Label(pad, text="Search Preferences", bg=PANEL, fg=TEXT,
                  font=(FONT, 13, "bold")).pack(anchor="w", padx=20, pady=(20, 2))
