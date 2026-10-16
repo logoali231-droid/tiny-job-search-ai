@@ -86,15 +86,36 @@ def all_sources() -> List[dict]:
 
 
 def toggle_source(source_id: str, enabled: bool) -> None:
-    """Persist the enabled flag for a builtin source."""
+    """Persist enabled state for builtin overrides and custom sources."""
     user = load_user_sources()
-    overrides = [
-        s for s in user if s.get("kind") == "_override" and s["id"] == source_id
-    ]
-    if overrides:
-        overrides[0]["enabled"] = enabled
+
+    # Built-in source settings are stored as _override records.
+    override = next(
+        (
+            source for source in user
+            if source.get("kind") == "_override" and source.get("id") == source_id
+        ),
+        None,
+    )
+    if override is not None:
+        override["enabled"] = enabled
+        save_user_sources(user)
+        return
+
+    # Custom API sources store their enabled flag on the source itself.
+    custom = next(
+        (
+            source for source in user
+            if source.get("kind") != "_override" and source.get("id") == source_id
+        ),
+        None,
+    )
+    if custom is not None:
+        custom["enabled"] = enabled
     else:
+        # No custom source exists, so this must be a built-in source.
         user.append({"id": source_id, "kind": "_override", "enabled": enabled})
+
     save_user_sources(user)
 
 
