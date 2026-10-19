@@ -83,3 +83,9 @@ SKILL_CATALOG = {
 # University period options (Brazil: 1–10 semesters typical)
 PERIOD_OPTIONS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 PERIOD_LABELS = ["Any / não sou estudante"] + [f"{i}º semestre" for i in range(1, 11)]
+
+# Caminho do .env (na raiz do projeto)
+ENV_PATH = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    ".env",
+)
